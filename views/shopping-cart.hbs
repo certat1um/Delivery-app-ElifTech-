@@ -1,0 +1,57 @@
+<main>
+    <section class="cart">
+        <div class="container">
+            <div class="cart-inner">
+                {{#if cart.0.dishes.length}}
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Name of the dish</th>
+                        <th>Count</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each cart.0.dishes}}
+                        <tr data-id="{{id}}">
+                        <td>{{name}}</td>
+                        <td class="item-count">{{count}}</td>
+                        <td class="item-price">{{price}} $</td>
+                        <td>
+                            <a href="/shopping-cart/delete-item/{{id}}" class="btn delete-btn" data-id="_1">X</a>
+                        </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                    </table>
+
+                    <form method="POST" action="/shopping-cart/make-order" class="form">
+                    <div class="form-input">
+                        <label for="name">Enter your name:</label>
+                        <input name="name" type="text" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Enter your phone:</label>
+                        <input name="phone" type="tel" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Enter your adress:</label>
+                        <input name="adress" type="adress" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="name">How many you have to pay:</label>
+                        <input name="how_many_cash_has" type="text" min="" placeholder="">
+                    </div>
+                    
+                    <button class="form-confirm-btn">
+                        confirm order <br> for <span class="outprice">{{cart.0.total_price}}</span> $
+                    </button>
+                    </form>
+                    {{else}}
+                    <h3 style="text-align: center;">Your cart is empty.</h3>
+                    {{/if}}
+            </div>
+        </div>
+    </section>
+</main>

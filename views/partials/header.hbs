@@ -1,0 +1,25 @@
+<header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <img src="./img/header/logo.png" alt="logo" class="header-img">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="/">Store</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Ratings</a></li>
+                        <li>
+                            <a href="/shopping-cart" class="header-count-tofix">
+                                <img class="header-cart-icon" src="./img/header/shopping-cart-icon.png" alt="">
+                                {{#if cart.0.dishes.length}}
+                                <span class="header-count">{{cart.0.dishes.length}}</span>
+                                {{else}}
+                                <span class="header-count">0</span>
+                                {{/if}}
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>

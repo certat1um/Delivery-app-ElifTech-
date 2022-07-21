@@ -1,0 +1,30 @@
+<main class="main">
+    <div class="container">
+        <section class="store">
+            <h2 class="store-heading">Choose what you want and we will drive it to you!</h2>
+            <div class="store-products">
+                {{#if dishes.length}}
+                {{#each dishes}}
+                <div class="product">
+                    <img src="{{img}}" alt="123" class="product-img">
+                    <div class="product-heading">{{name}}</div>
+                    <div class="product-desc">{{text}}</div>
+                    <div class="product-bottom">
+                        <div class="product-size">{{weight}}</div>
+                        <div class="product-time">{{delivery_time}}</div>
+                        <div class="product-price">{{price}} $
+                        </div>
+                        <a href="/add-to-cartfile/{{id}}" class="btn product-buy-btn">+</a>
+                    </div>
+                </div>
+                {{/each}}
+                {{else}}
+                <p>No dishes found.</p>
+                {{/if}}
+            </div>
+            <div class="store-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae consectetur quo nostrum obcaecati numquam fugit ullam debitis unde nihil ipsa.
+            </div>
+        </section>
+    </div>
+</main>

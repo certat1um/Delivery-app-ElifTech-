@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "type": "_1",
+        "name": "Spagetti",
+        "text": "Lorem, dam ipsum dolor sit amet consectetur adipisicing elit. Veritatis la similique esse impedit maxime veniam pariatur etnis dak tempora possimus.",
+        "img": "./img/main/product-logos/bg-1.jpg",
+        "weight": "450g",
+        "delivery_time": "20-30min",
+        "price": 4.99
+    },
+    {
+        "id": "2",
+        "type": "_2",
+        "name": "La Pasta",
+        "text": "Lorem, dam ipsum dolor sit amet consectetur adipisicing elit. Veritatis la similique esse impedit maxime veniam pariatur etnis dak tempora possimus.",
+        "img": "./img/main/product-logos/bg-2.jpg",
+        "weight": "520g",
+        "delivery_time": "20-35min",
+        "price": 6.99
+    },
+    {
+        "id": "3",
+        "type": "_3",
+        "name": "Formetta",
+        "text": "Lorem, dam ipsum dolor sit amet consectetur adipisicing elit. Veritatis la similique esse impedit maxime veniam pariatur etnis dak tempora possimus.",
+        "img": "./img/main/product-logos/bg-3.jpg",
+        "weight": "300g",
+        "delivery_time": "20-35min",
+        "price": 3.99
+    }
+]

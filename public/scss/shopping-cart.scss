@@ -1,0 +1,76 @@
+.cart {
+    padding: 50px 0;
+    font-family: 'Rubik';
+    min-height: 80vh;
+    .container {
+        max-width: 950px;
+    }
+    &-inner {
+
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #dddddd;
+    }
+    td, th {
+        text-align: center;
+        padding: 15px;
+    }
+    th {
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+    .item-count {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .delete-btn {
+        background: tomato;
+        color: #fff;
+        font-weight: 200;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .form {
+        max-width: 500px;
+        font-size: 16px;
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-input {
+            margin: 8px 0;
+            display: flex;
+            flex-direction: column;
+            label {
+                margin-bottom: 10px;
+            }
+            input {
+                outline: none;
+                font-family: 'Rubik';
+                font-size: 15px;
+                padding: 5px 10px;
+                border: 1px solid #cecece;
+                border-radius: 5px;
+            }
+        }
+        &-confirm-btn {
+            margin: 0 auto;
+            margin-top: 15px;
+            cursor: pointer;
+            font-family: 'Rubik';
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 15px;
+            background: linear-gradient(to left, #d87e18, #CF4628);
+            width: 180px;
+        }
+    }
+}

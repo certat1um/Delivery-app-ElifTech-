@@ -1,0 +1,23 @@
+.footer {
+    padding: 35px 0;
+    background: #fff;
+    box-shadow: 0 0 10px #cecece;
+    &-inner {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-col {
+        list-style: none;
+        margin: -15px 0;
+        li {
+            margin: 15px 0;
+        }
+    }
+    &-socials {
+        img {
+            display: block;
+            max-width: 100%;
+            width: 35px;
+        }
+    }
+}
